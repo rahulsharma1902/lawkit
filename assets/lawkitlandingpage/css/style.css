@@ -1,0 +1,990 @@
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondThin.eot');
+    src: local('../fonts/Pluto Sans Cond Thin'), local('PlutoSansCondThin'),
+        url('../fonts/PlutoSansCondThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondThin.woff') format('woff'),
+        url('../fonts/PlutoSansCondThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondLight.eot');
+    src: local('../fonts/Pluto Sans Cond Light'), local('PlutoSansCondLight'),
+        url('../fonts/PlutoSansCondLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondLight.woff') format('woff'),
+        url('../fonts/PlutoSansCondLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondMedium.eot');
+    src: local('../fonts/Pluto Sans Cond Medium'), local('PlutoSansCondMedium'),
+        url('../fonts/PlutoSansCondMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondMedium.woff') format('woff'),
+        url('../fonts/PlutoSansCondMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond ExLight';
+    src: url('../fonts/PlutoSansCondExLight.eot');
+    src: local('../fonts/Pluto Sans Cond ExLight'), local('PlutoSansCondExLight'),
+        url('../fonts/PlutoSansCondExLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondExLight.woff') format('woff'),
+        url('../fonts/PlutoSansCondExLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondBold.eot');
+    src: local('../fonts/Pluto Sans Cond Bold'), local('PlutoSansCondBold'),
+        url('../fonts/PlutoSansCondBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondBold.woff') format('woff'),
+        url('../fonts/PlutoSansCondBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondBlack.eot');
+    src: local('../fonts/Pluto Sans Cond Black'), local('PlutoSansCondBlack'),
+        url('../fonts/PlutoSansCondBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondBlack.woff') format('woff'),
+        url('../fonts/PlutoSansCondBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansThin.eot');
+    src: local('../fonts/Pluto Sans Thin'), local('PlutoSansThin'),
+        url('../fonts/PlutoSansThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansThin.woff') format('woff'),
+        url('../fonts/PlutoSansThin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondRegular.eot');
+    src: local('../fonts/Pluto Sans Cond Regular'), local('PlutoSansCondRegular'),
+        url('../fonts/PlutoSansCondRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondRegular.woff') format('woff'),
+        url('../fonts/PlutoSansCondRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansMedium.eot');
+    src: local('../fonts/Pluto Sans Medium'), local('PlutoSansMedium'),
+        url('../fonts/PlutoSansMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansMedium.woff') format('woff'),
+        url('../fonts/PlutoSansMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansBlack.eot');
+    src: local('../fonts/Pluto Sans Black'), local('PlutoSansBlack'),
+        url('../fonts/PlutoSansBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansBlack.woff') format('woff'),
+        url('../fonts/PlutoSansBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansBold.eot');
+    src: local('../fonts/Pluto Sans Bold'), local('PlutoSansBold'),
+        url('../fonts/PlutoSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansBold.woff') format('woff'),
+        url('../fonts/PlutoSansBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansExtraLight.eot');
+    src: local('../fonts/Pluto Sans ExtraLight'), local('PlutoSansExtraLight'),
+        url('../fonts/PlutoSansExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansExtraLight.woff') format('woff'),
+        url('../fonts/PlutoSansExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansRegular.eot');
+    src: local('../fonts/Pluto Sans Regular'), local('PlutoSansRegular'),
+        url('../fonts/PlutoSansRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansRegular.woff') format('woff'),
+        url('../fonts/PlutoSansRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansLight.eot');
+    src: local('../fonts/Pluto Sans Light'), local('PlutoSansLight'),
+        url('../fonts/PlutoSansLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansLight.woff') format('woff'),
+        url('../fonts/PlutoSansLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans';
+    src: url('../fonts/PlutoSansHeavy.eot');
+    src: local('../fonts/Pluto Sans Heavy'), local('PlutoSansHeavy'),
+        url('../fonts/PlutoSansHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansHeavy.woff') format('woff'),
+        url('../fonts/PlutoSansHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pluto Sans Cond';
+    src: url('../fonts/PlutoSansCondHeavy.eot');
+    src: local('../fonts/Pluto Sans Cond Heavy'), local('PlutoSansCondHeavy'),
+        url('../fonts/PlutoSansCondHeavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlutoSansCondHeavy.woff') format('woff'),
+        url('../fonts/PlutoSansCondHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body{
+     font-family: 'Pluto Sans';
+}
+
+img {
+    max-width: 100%;
+}
+i.fa-regular {
+    font-family: 'FontAwesome';
+}
+.Login-pages {
+/*       height: calc(100vh - 100px);*/
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.page-footer {
+    padding: 40px 0px;
+}
+.Login-pages .container.container-login {
+    max-width: 690px;
+}
+.Login-logo {
+    padding: 50px 0px 50px;
+}
+
+
+.check-lable {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #425466;
+}
+
+/* Hide the browser's default checkbox */
+.check-lable input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.check-lable:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-lable input:checked ~ .checkmark {
+  background-color: #7B78FB;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.check-lable input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-lable .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.input-group label.form-label.text-right {
+    color: #7B78FB;
+    font-weight: 500;
+    text-align: right;
+    padding-left: 10px;
+}
+
+.input-group.form-check {
+    padding-left: 0px;
+}
+
+.login-box {
+    box-shadow: 0px 73px 84px rgba(19, 38, 62, 0.08);
+    border-radius: 25px;
+    background-color: #fff;
+    padding: 60px 55px;
+}
+.Login-pages h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #13263E;
+    margin: 0px 0px 20px;
+}
+
+.input-group {
+    margin: 0px 0px 30px;
+    flex-wrap: wrap;
+}
+
+.input-group label.form-label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #425466;
+    display: block;
+    width: 100%;
+    margin: 0px 0px 9px;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px !important;
+    padding: 18px 20px;
+    font-size: 14px;
+}
+.form-control:focus {
+    border-color: #7B78FB;
+    box-shadow: none;
+}
+.cta {
+    background-color: #7B78FB;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 17px 44px;
+    text-align: center;
+}
+
+.cta:hover {
+    color: #fff;
+    background-color: #25d3fb;
+}
+button#prev_box.cta {
+    border: 1px solid #E8E8E8;
+    background-color: transparent;
+    color: #425466;
+}
+
+button#prev_box.cta:hover {
+    background-color: #25d3fb;
+    border-color: #25d3fb;
+    color: #fff;
+}
+.confr-div {
+    text-align: center;
+}
+
+.confr-div p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #425466;
+    margin: 30px 0px 0px;
+}
+
+.login-outer-wrapper {
+    padding: 0px 0px 30px;
+}
+
+.login-outer-wrapper p.sign-ip-link {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 50px 0px 0px;
+}
+.input-group label.form-label a,
+.login-outer-wrapper p.sign-ip-link a,
+.confr-div p a,
+.check-lable a {
+    color: #7B78FB;
+    text-decoration: none;
+}
+footer p {
+    font-family: 'Pluto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    color: #425466;
+    margin: 0px;
+}
+img.bg-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
+.subscription-inner {
+    padding: 100px 0px 30px;
+}
+.Login-pages .container {
+    max-width: 1460px;
+}
+
+.subscription-inner .text-col h2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: -0.03em;
+    color: #13263E;
+    margin: 0px 0px 20px;
+}
+.register-logo {
+    margin: 0px 0px 70px;
+}
+
+.subscription-inner .text-col ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #425466;
+}
+.subscription-inner .text-col ul li b {
+    font-size: 14px;
+}
+
+ul.tick-list {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+ul.tick-list li {
+    position: relative;
+    padding-left: 50px;
+}
+
+ul.tick-list li:before {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-image: url(../images/tick-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+        top: -3px;
+}
+
+ul.tick-list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+#payment-box {
+    display: none;
+}
+.Login-pages.subscription-pages {
+    height: auto;
+}
+.input-group.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input#cc-number {
+    background-image: url(../images/card.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+}
+input#cc-cvv {
+    background-image: url(../images/cvv.png);
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+}
+.site-header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 25px 0px;
+    z-index: 99;
+}
+
+.home-banner {
+    padding: 200px 0px 21px;
+    position: relative;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: calc(100vh - 100px);
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menu a.cta-round {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.cta-round {
+    color: #fff;
+    background-color: #13263E;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 13px 37px;
+    display: inline-block;
+    border-radius: 50px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-round i {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.header-menu .cta-round.cta-round-blank {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.cta-round:hover {
+    background-color: #7B78FB;
+    color: #fff;
+}
+
+.cta-round.cta-round-light {
+    background-color: rgba(255, 255, 255, 0.31);
+}
+
+.cta-round.cta-round-light:hover {
+    background-color: #13263E;
+}
+.home-banner .container {
+    position: static;
+}
+
+.home-banner .banner-image {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    width: 50%;
+}
+
+.home-banner .inner-banner {
+    width: 50%;
+}
+
+.inner-banner h1 {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    margin: 0px 0px 30px;
+}
+
+.inner-banner h1 span.blue {
+    color: #13263E;
+}
+
+.inner-banner h3 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 36px;
+    color: #13263E;
+    margin: 0px 0px 17px;
+}
+
+.desc-col p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #425466;
+}
+
+.inner-banner .btn-wrapper {
+    margin-top: 30px;
+}
+.menu-toggle {
+    display: none;
+}
+img.bg-image-mobile {
+    display: none;
+}
+.input-group.form-check label.check-lable {
+    width: 80%;
+}
+.input-group.form-check .stripe-div {
+    width: 20%;
+}
+/*---- responsive start ------*/
+
+
+@media(max-width: 1599px){
+    .inner-banner h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.inner-banner h3 {
+    font-size: 18px;
+    line-height: 1.4;
+}
+.home-banner {
+    padding: 150px 0px 20px;
+}
+.desc-col p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.Login-logo {
+    padding: 30px 0px;
+}
+
+.login-box {
+    padding: 40px;
+}
+
+.Login-pages h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.input-group {
+    margin: 0px 0px 20px;
+}
+
+.form-control {
+    padding: 11px 15px;
+}
+
+.cta {
+    padding: 10px 20px;
+}
+.register-logo a {
+    display: inline-block;
+    max-width: 240px;
+}
+.register-logo {
+    margin: 0px 0px 30px;
+}
+.subscription-inner .text-col h2 {
+    font-size: 38px;
+    line-height: 1.5;
+    margin: 0px 0px 10px;
+}
+.login-box p {
+    font-size: 14px;
+}
+.login-box form {
+    margin-top: 20px;
+}
+}
+
+@media(max-width: 1365px){
+.home-banner .banner-image {
+    top: 7%;
+}
+
+.home-banner {
+    padding: 150px 0px 30px;
+}
+}
+
+@media(max-width: 1199px){
+.home-banner .banner-image {
+    width: 40%;
+}
+
+.home-banner .inner-banner {
+    width: 60%;
+}
+}
+
+@media(max-width: 991px){
+    .cta-round {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.inner-banner .btn-wrapper {
+    margin-top: 10px;
+}
+
+.inner-banner h1 {
+    font-size: 42px;
+    margin: 0px 0px 20px;
+}
+
+.home-banner .banner-image {
+    width: 47%;
+}
+.inner-banner h3 {
+    font-size: 18px;
+}
+
+.desc-col p {
+    font-size: 14px;
+}
+.header-menu-wrapper {
+    display: none;
+}
+
+.menu-toggle span.bar {
+    background-color: #fff;
+    height: 1px;
+    width: 27px;
+    display: block;
+    margin: 3px 0px;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    background-color: #ffffffbd;
+    padding: 0px;
+    border-radius: 30px;
+    padding: 7px 20px;
+}
+.header-menu-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 15px;
+}
+
+.header-menu {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-menu a.cta-round,.header-menu .cta-round.cta-round-blank {
+    margin: 7px 0px;
+    background-color: #7B78FB;
+    padding: 10px 20px;
+}
+}
+
+@media(max-width: 767px){
+.Login-pages {
+    height: auto;
+}
+.Login-logo {
+    padding: 22px 0px 30px;
+}
+
+.Login-logo a {
+    display: inline-block;
+    max-width: 124px;
+}
+
+.Login-logo a img {
+    max-width: 100%;
+}
+.login-box {
+    padding: 30px;
+}
+
+.Login-pages h2 {
+    font-size: 26px;
+    margin: 0px 0px 16px;
+    line-height: 1.5;
+}
+
+.input-group label.form-label {
+    font-size: 12px;
+    margin: 0px 0px 8px;
+}
+
+.form-control {
+    padding: 9px 20px;
+}
+
+.input-group {
+    margin: 0px 0px 20px;
+}
+
+.cta {
+    font-size: 14px;
+    padding: 14px 10px;
+}
+
+.login-outer-wrapper p.sign-ip-link {
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+.home-banner .container {
+    max-width: 100%;
+}
+
+.home-banner .banner-image {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: auto;
+    right: -12px;
+}
+
+.home-banner .inner-banner {
+    width: 100%;
+}
+
+.home-banner {
+    height: auto;
+    background-size: cover;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.inner-banner h1 {
+    font-size: 40px;
+    line-height: 43px;
+    margin: 0px 0px 30px;
+}
+
+.home-banner .inner-banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-banner .inner-banner > div {
+    width: 100%;
+}
+
+.inner-banner 
+ .heading {
+    order: 1;
+}
+
+.inner-banner 
+ .btn-wrapper {
+    order: 2;
+    margin-top: 0px;
+}
+
+.inner-banner 
+ .banner-image {
+    order: 3;
+}
+
+.inner-banner 
+ .description {
+    order: 4;
+}
+
+.inner-banner h1 span.blue {
+    color: #fff;
+}
+
+.home-banner .inner-banner .cta-round.cta-round-blue {
+    background-color: rgba(255, 255, 255, 0.31);
+    font-size: 10px;
+    padding: 8px 24px;
+}
+
+.home-banner .inner-banner .cta-round.cta-round-blue i {
+    font-size: 10px;
+}
+
+.desc-col p {
+    font-size: 12px;
+}
+.header-wrapper a.brand {
+    max-width: 125px;
+}
+
+.home-banner {
+    padding: 100px 0px 20px;
+}
+img.login-desk-bg {
+    display: none;
+}
+
+img.bg-image-mobile {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.subscription-inner {
+    padding: 0px;
+}
+
+.register-logo a {
+    max-width: 124px;
+}
+
+.register-logo {
+    margin: 0px;
+    padding: 22px 0px 30px;
+}
+
+.subscription-inner .text-col h2 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px 0px 15px;
+}
+
+.subscription-inner .text-col ul li {
+    padding-left: 42px;
+}
+
+button#prev_box.cta {
+    margin-bottom: 20px;
+}
+.subscription-inner {
+    padding: 0px;
+}
+
+.register-logo a {
+    max-width: 124px;
+}
+
+.register-logo {
+    margin: 0px;
+    padding: 22px 0px 30px;
+}
+
+.subscription-inner .text-col h2 {
+    font-size: 26px;
+    line-height: 32px;
+    margin: 0px 0px 15px;
+}
+
+.subscription-inner .text-col ul li {
+    padding-left: 42px;
+}
+
+button#prev_box.cta {
+    margin-bottom: 20px;
+}
+
+.subscription-inner .text-col {
+    margin-bottom: 30px;
+}
+
+.Login-pages h2 {
+    margin: 0px 0px 10px;
+}
+
+.input-group.form-check {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.input-group.form-check label.check-lable {
+    width: 100%;
+}
+
+.checkmark {
+    top: 0px;
+}
+
+.input-group.form-check .stripe-div {
+    width: 100%;
+    text-align: right;
+}
+
+.input-group.form-check .stripe-div img {
+    width: 53px;
+    margin-top: -10px;
+}
+.Login-pages.subscription-pages img.bg-image-mobile {
+    height: 520px;
+    object-fit: cover;
+}
+}

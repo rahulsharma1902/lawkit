@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="<?=base_url();?>assets/lawkit/css/style.css" rel="stylesheet">
+    
     <title>Login</title>
   </head>
    <!-- plugins style -->
 
    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
 
-<link rel="stylesheet" href="<?=base_url();?>assets/plugins/sweet/sweetalert2.min.css">
-
+    <link rel="stylesheet" href="<?=base_url();?>assets/css/bs.min.css">
+   <link rel="stylesheet" href="<?=base_url();?>assets/css/animate.min.css">
+   <link rel="stylesheet" href="<?=base_url();?>assets/plugins/sweet/sweetalert2.min.css">
+   <link href="<?=base_url();?>assets/lawkit/css/style.css" rel="stylesheet">
 <!-- plugins js -->
 
 <script src="<?=base_url();?>assets/js/jquery.min.js"></script>
@@ -97,7 +99,7 @@
             <input type="email" name="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" value="<?=$this->input->post('email');?>">
           </div>
           <div class="input-group d-flex">
-            <label for="InputPassword1" class="form-label w-50">Contraseña</label><label class="form-label w-50 text-right"><a href="#">¿Olvidaste tu contraseña?</a></label>
+            <label for="InputPassword1" class="form-label w-50">Contraseña</label><label class="form-label w-50 text-right"><a href="<?=base_url();?>account/recovery">¿Olvidaste tu contraseña?</a></label>
             <input type="password" name="password" class="form-control w-100" id="InputPassword1" value="<?=$this->input->post('password');?>">
           </div>
           <div class="input-group form-check">
@@ -108,15 +110,100 @@
           </div>
           <button type="submit" class="btn cta w-100">Iniciar Sesión</button>
           <div class="confr-div">
-            <p>Solicitar correo de confirmación</p>
+          <p class="mt-2 text-muted text-center"><small data-toggle="modal" data-target="#modalConfirmation">Solicitar correo de confirmación</small></p>
+
           </div>
         </form>
       </div>
-      <p class="sign-ip-link">Aún no tienes una cuenta?. <a href="#" >Inscríbete.</a></p>
+      <p class="sign-ip-link">¿Aún no tienes tu cuenta? <a href="<?=base_url();?>account/signup" >Inscríbete.</a></p>
     </div>
   </div>
   </div>
 </div>
+
+<!--  Confermation email model -->
+
+<div class="modal fade" id="modalConfirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Ingresa tu correo electrónico</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+               </div>
+               <div class="modal-body">
+                  <form id="frmConfirmAccount">
+                     <div class="form-group">
+                        <label class="control-label">Correo electrónico</label>
+                        <input type="text" class="form-control" name="email" id="inpEmail">
+                        <p class="text-danger hidden" id="frmError"></p>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+               <button type="button" class="btn btn-primary btnConfirmAccount">Confirmar cuenta</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <script>
+         $(document).ready(function(){
+            $(".btnConfirmAccount").on("click", function(){
+               var p = $("#frmError")
+               var btn = $(this)
+               var email = $("input#inpEmail")
+               btn.attr("disabled", true).addClass("disabled").html("<i>Enviando correo de confirmación...</i>")
+               if(email.val() === "") {
+                  p.removeClass("hidden")
+                  p.text("Ingrese un correo electrónico válido")
+                  btn.attr("disabled", false).removeClass("disabled").html("Confirmar cuenta")
+                  return false;
+               }
+               p.addClass("hidden").html("")
+               $.ajax({
+                  type: 'POST',
+                  url: '/account/resend_email_confirmation',
+                  dataType: "json",
+                  data: $("#frmConfirmAccount").serialize(),
+                  success: function(response) {
+                     if(response.error) {
+                        Swal.fire({
+                           type:"error",
+                           text:response.message
+                        })
+                        btn.attr("disabled", false).removeClass("disabled").html("Confirmar cuenta")
+                        return;
+                     }
+                     // Handle a successful response
+                     $("#modalConfirmation").modal("hide")
+                     Swal.fire({
+                        type:"success",
+                        text:response.message
+                     })
+                     btn.attr("disabled", false).removeClass("disabled").html("Confirmar cuenta")
+                     email.val("")
+                  },
+                  error: function(xhr, status, error) {
+                  // Handle an error response
+                  console.log(xhr.responseText);
+                  btn.attr("disabled", false).removeClass("disabled").html("Confirmar cuenta")
+                  }
+               });
+            })
+         })
+      </script>
+
+
+
+
+
+
+
 <footer class="text-center page-footer">
   <div class="container">
     <p>© 2023 Lawkit</p>

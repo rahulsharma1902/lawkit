@@ -133,8 +133,8 @@ class Account extends CI_Controller {
 		
 
 		if($this->input->post()){
-			print_r($this->input->post());
-			die();
+			// print_r($this->input->post());
+			// die();
 			#validar si existe ya en bd // Check user email exists or not
 			$exists = $this->Account_model->get_customer_by_email($this->input->post('email'));
 			if($exists){
@@ -353,7 +353,7 @@ class Account extends CI_Controller {
 		if($this->input->get('_ga'))
 			$data['redirect'] = $this->input->get('_ga');
 		
-		if($this->input->post()){
+		if($this->input->post()){ 
 			$this->form_validation->set_rules('email', 'email', 'trim|required|valid_email');
 			if($this->form_validation->run() == FALSE){
 				$this->msg->toast('check-square.svg', 'Aviso', 'Ingresa un correo electrónico válido');
