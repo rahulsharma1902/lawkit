@@ -1,0 +1,590 @@
+html,
+body {
+    height: 100%;
+}
+
+.endless-rotate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120px;
+    height: 120px;
+    margin: -60px 0 0 -60px;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.toast {
+    opacity: 1 !important;
+    min-width: 360px;
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signup {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin: auto;
+}
+
+.lawkit-btn.bg-lk-blue-o2.mt-2.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.form-signup .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signup .form-control:focus {
+    z-index: 2;
+}
+
+.hidden {
+    display: none;
+}
+
+#anchor-cancel-payment-intent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+#anchor-cancel-payment-intent:hover {
+    text-decoration: none;
+}
+
+#icon-cancel-payment-intent {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Login page */
+
+.vertical-align-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.vertical-align-middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#wrapper {
+    height: 100%;
+}
+
+@media screen and (min-width: 992px) {
+    .auth-box {
+        width: 65% !important;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .right .content svg {
+        width: 250px;
+    }
+}
+
+.auth-box {
+    -moz-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 60%;
+    height: 450px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+}
+
+.auth-box:before {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    display: inline;
+    content: " ";
+    vertical-align: middle;
+    height: 100%;
+}
+
+.auth-box .content {
+    display: inline-block !important;
+    vertical-align: middle;
+    vertical-align: auto;
+    zoom: 1;
+    display: inline;
+    width: 95%;
+    vertical-align: middle;
+}
+
+.auth-box .left {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+    text-align: center;
+    background: #fff;
+}
+
+.auth-box .left:before {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    content: " ";
+    vertical-align: middle;
+    height: 100%;
+}
+
+.auth-box .right {
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.auth-box .right:before {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    content: " ";
+    vertical-align: middle;
+    height: 100%;
+}
+
+.auth-box .right .text {
+    position: relative;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.auth-box .right .heading {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.auth-box .right p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.auth-box .right .overlay {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(179 179 179 / 18%);
+}
+
+@media screen and (max-width: 1279px) {
+    .auth-box {
+        width: 90%;
+    }
+    .auth-box .left {
+        top: 3.3em;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .auth-box .left {
+        width: 100%;
+        position: inherit;
+        padding: 30px;
+    }
+    .auth-box .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .auth-box {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .auth-box {
+        width: 90%;
+    }
+    .auth-box .content {
+        width: 95%;
+    }
+}
+
+
+/* Login page body */
+
+.page-login {
+    background-image: url("/assets/images/leaf-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Login form general input field */
+
+.login-input {
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    border: solid #e4e4e4 1px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+
+/* Login form button */
+
+.login-button {
+    width: 70%;
+}
+
+
+/* Login form password field */
+
+.login-password-field>.input-group-append>.input-group-text {
+    border: solid #e4e4e4 1px;
+    border-left: none;
+    background-color: transparent;
+}
+
+.login-password-field>.form-control:focus {
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: inset 0 0 0 transparent, none;
+}
+
+.login-email-field:focus {
+    border-color: #000;
+}
+
+
+/* Forgot passord link */
+
+.forgot-password {
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Source Sans Pro";
+    color: #4e4e4e;
+}
+
+.forgot-password:hover {
+    color: #000;
+    font-weight: 400;
+}
+
+
+/* Lawkit input fields */
+
+.lawkit-input {
+    outline: none;
+    margin: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    padding: 10px !important;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    color: #666;
+}
+
+.lawkit-input:focus {
+    border: 1px solid #000;
+}
+
+
+/* Custom buttons */
+
+.bg-lk-blue-o2 {
+    background-color: #03a9f4;
+}
+
+.lawkit-btn {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    height: auto;
+    line-height: 20px;
+    color: #fff;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    border: none !important;
+}
+
+.lawkit-btn:hover {
+    background: #fff;
+    color: #172b4d;
+    border: solid #e4e4e4 1px;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 1px 10px 2px #bfbfbf;
+    -moz-box-shadow: 1px 1px 10px 2px #BFBFBF;
+    box-shadow: 1px 1px 10px 2px #bfbfbf;
+}
+
+.lawkit-btn:focus {
+    outline: none !important;
+}
+
+
+/* Targets */
+
+
+/* Letters and symbol */
+
+
+/* path36 & path40 are the paths of the Registered symbol */
+
+#path36 {
+    animation: appears-animation 4s linear;
+}
+
+#path40 {
+    animation: appears-animation 4s backwards;
+}
+
+
+/* Shape */
+
+#Shape-1 {
+    stroke-dasharray: 110;
+    stroke-dashoffset: 110;
+    animation: line-animation 2s ease-in-out forwards 0.9s, fill-lk-purple 0.5s ease forwards 2.5s;
+}
+
+#Shape-2 {
+    stroke-dasharray: 115;
+    stroke-dashoffset: 115;
+    animation: line-animation 2s ease-in-out forwards 0.9s, fill-lk-dblue 0.5s ease forwards 2.5s;
+}
+
+#Shape-3 {
+    stroke-dasharray: 126;
+    stroke-dashoffset: 126;
+    animation: line-animation 2s ease-in-out forwards 0.9s, fill-lk-lblue 0.5s ease forwards 2.5s;
+}
+
+#Shape-4 {
+    stroke-dasharray: 76;
+    stroke-dashoffset: 76;
+    animation: line-animation 2s ease-in-out forwards 0.9s, fill-lk-purple 0.5s ease forwards 2.5s;
+}
+
+
+/* Lawkit word */
+
+
+/* Letter L */
+
+#Letter-l {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-animation 2s ease forwards 0.3s, fill 0.5s ease forwards 2.5s;
+}
+
+
+/* Letter a */
+
+#Letter-a {
+    stroke-dasharray: 313;
+    stroke-dashoffset: 313;
+    animation: line-animation 2s ease forwards 0.6s, fill 0.5s ease forwards 2.5s;
+}
+
+#path45 {
+    animation: fill-secondary 0.5s ease forwards 2.5s;
+}
+
+
+/* Letter W */
+
+#Letter-w {
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
+    animation: line-animation 2s ease forwards 0.9, fill 0.5s ease forwards 2.5s;
+}
+
+
+/* Letter K */
+
+#Letter-k {
+    stroke-dasharray: 284;
+    stroke-dashoffset: 284;
+    animation: line-animation 2s ease forwards 1.2s, fill 0.5s ease forwards 2.5s;
+}
+
+
+/* Letter i */
+
+#Letter-i {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-animation 2s ease forwards 1.5s, fill 0.5s ease forwards 2.5s;
+}
+
+#Letter-i-dot {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+    animation: line-animation 2s ease forwards 1.5s, fill 0.5s ease forwards 2.5s;
+}
+
+
+/* Letter T */
+
+#Letter-t {
+    stroke-dasharray: 194;
+    stroke-dashoffset: 194;
+    animation: line-animation 2s ease forwards 1.8s, fill 0.5s ease forwards 2.5s;
+}
+
+
+/* Aminations */
+
+@keyframes appears-animation {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: black;
+    }
+}
+
+@keyframes rotation360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes line-animation {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #13263e;
+    }
+}
+
+@keyframes fill-secondary {
+    to {
+        fill: #e9e9e9;
+    }
+}
+
+@keyframes fill-lk-purple {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #7b78fb;
+    }
+}
+
+@keyframes fill-lk-dblue {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #0d4fe0;
+    }
+}
+
+@keyframes fill-lk-lblue {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: #25d3fb;
+    }
+}

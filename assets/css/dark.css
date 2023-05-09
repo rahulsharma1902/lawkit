@@ -1,0 +1,180 @@
+/* Body content */
+div#content, body {
+    background-color: #25282c !important;
+}
+
+/* Header & footer*/
+
+nav.nav__, footer, .nav__menu {
+    background-color: #111417 !important;
+}
+
+#userDdown {
+   background-color: #25282c !important;
+   border: 1px solid black !important;
+}
+
+#userDdown .dropdown-item {
+    color: #ffffffcc !important;
+}
+
+#userDdown .dropdown-item:focus, #userDdown .dropdown-item:hover {
+    background-color: #303337;
+}
+
+.dropdown-multicol2 h6 {
+  color: #ffffffcc !important;
+}
+
+.dropdown-content { background: #1a1a1a !important; }
+.dropdown-content h6 { color: white !important; }
+.dropdown-content:after { 
+    border-bottom-color: #1a1a1a !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+}
+.dropdown-item.link { color: #ccc; }
+.dropdown-item.link:hover { background: #222; color: #ccc !important; }
+
+/* Titles */
+h4.title, .lk-card .text-uppercase, body {
+  color: #ffffffcc !important;
+} 
+
+/* Modals */
+
+.modal-header, .modal-footer {
+    background-color: #111417 !important;
+    border-bottom: 1px solid #000000 !important;
+    border-top: 1px solid #000000 !important;
+}
+
+.modal-body {
+    background-color: #25282c !important;
+}
+
+.close, .modal-header button.close {
+    color: aliceblue;
+}
+
+/* Tables */
+
+.table thead th, .table thead td, .table tbody td {
+    color: #ffffffcc !important;
+}
+
+.table td, .table th {
+    border-top: 1px solid #47494d !important;
+}
+
+/* Group items */
+.list-group-item {
+    background-color: #191c20 !important;
+}
+
+/* Buttons */
+
+.lawkit-btn-circle svg {
+    color: #ffffffcc !important;
+}
+
+.lawkit-btn-circle:hover {
+    background-color: #111417 !important;
+}
+
+.lawkit-btn:hover {
+    background-color: #45a3fb !important;
+    box-shadow: none !important;
+    color: white !important;
+}
+
+.actions-btn {
+    border: 1px solid #000!important;
+    box-shadow: 0px 7px 13px -8px #000000!important;
+}
+
+/* Custom cards */
+
+.card.lk-card, .no-calendars {
+    background-color: #191c20 !important;
+    border: 1px solid #000000 !important;
+}
+
+/* Tabs */
+
+#myTab {
+    background: #111417 !important;
+}
+
+#myTab .nav-item .nav-link {
+    color: white !important;
+}
+
+#myTab .nav-item .nav-link.active {
+    background-color: #03a9f4cc !important;
+    background-color: #7b78fc !important;
+}
+
+
+/* Inputs */
+
+.lawkit-input, #card-element {
+    background-color: rgba(255,255,255,.05) !important;
+    border: #24272b !important;
+    color: #929292 !important;
+}
+
+.lawkit-input:focus, #card-element:focus {
+    color: rgba(255,255,255,.8) !important;
+    border-color: rgba(0,0,0,.4) !important;
+    -moz-box-shadow: 0 0 0 1.5px rgba(24,144,255,.3) !important;
+    -webkit-box-shadow: 0 0 0 1.5px rgb(24 144 255 / 30%) !important;
+    box-shadow: 0 0 0 1.5px rgb(24 144 255 / 30%) !important;
+    outline: 0 !important;
+}
+
+/* Calendar */
+.calendar-wrapper {
+    background-color: #111417 !important;
+}
+
+.custom-calendar > tbody > tr > td {
+    color: rgba(255,255,255,.8) !important;
+}
+
+.custom-calendar {
+    border-color: #47494d !important; 
+}
+
+.prev-cal, .next-cal {
+    color: white !important; 
+}
+
+.table-bordered td, .table-bordered th {
+    border: 1px solid #000 !important;
+}
+
+.SCprefix {
+    background: rgb(0 0 0 / 50%) !important;
+}
+
+
+/* Cards accordion */
+
+
+.my-cards .card {
+    border: 1px solid #25282c;
+    background-color: #111417;
+}
+.my-cards .card-header {
+    background: #111417 !important;
+    border-bottom: 1px solid #25282c;
+}
+
+.my-cards p {
+    color: #b8b9ba !important;
+}
+
+.my-cards .card-block {
+    background: #171a1e;
+}

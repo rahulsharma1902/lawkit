@@ -1,0 +1,1 @@
+CREATE TABLE `lawkitmx_general_db`.`coupons` ( `id` INT NOT NULL AUTO_INCREMENT , `uid` VARCHAR(255) NOT NULL , `code` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`), UNIQUE `code` (`code`)) ENGINE = InnoDB; 
