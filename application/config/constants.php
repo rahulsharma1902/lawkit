@@ -88,11 +88,16 @@ defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest auto
 /* define('STRIPE_API_KEY',				'sk_test_51HSqIiEp2krUL6QUbZGpWwfGwBl2WC3swHbVnDBeFTPXSWoxTdYCIWWE1U47n765fJcnrcvUf9vlNsmD8EbBWjZ900lGwexbbQ');
 define('STRIPE_PUBLISHABLE_KEY',		'pk_test_51HSqIiEp2krUL6QUQEiL7P8CyYLWymeRBP9cZx88qXjoBL4qzV37Mny83wTbAmx4LHTYJJXx5wzKmjVhJhfNecLz00AgNuQuSu'); */
 
+/**
+ #Use these stripe key when project is published
+// define('STRIPE_API_KEY', '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');
+// define('STRIPE_PUBLISHABLE_KEY', 'pk_live_51HSqIiEp2krUL6QU2DfRiR4FeaWDWAQYEEXLYuwb7et6c3xUzfX1jyQ3Pst8BW9CKL5kmf2gYCXVetHjmNCiGzTH00CRKr7FVS');
+ */
 /** stripe  */
 define('STRIPE_API_KEY', 'sk_test_51N5MbaSIRfv8P9JxkvDnezYkFIKcYb7EOPAebqejc6bIiuZrcQOgeZzHFC0g48nPwrZU0Uoq63zvcvUJqIsJNpba00uCtUaggR');
 define('STRIPE_PUBLISHABLE_KEY', 'pk_test_51N5MbaSIRfv8P9JxGuCtqVMrF5jXs2UPsT4TiUjMxnvgrHLv74N6rPwBXEt2RawZKm8nZSNjb8E5JpjW9fiJ3Wqt00m4MB5eWg');
 define('PLAN_LAWKIT',      				'plan_I5TQ7CIW6yw1P8');
-define('LAWKIT_10',                     'price_1N5NrYSIRfv8P9Jx1zrWZFgx');
+define('LAWKIT_10',                     'price_1N5NrYSIRfv8P9Jx1zrWZFgx'); // When this project go live change this key with =>> price_1LhdJREp2krUL6QUVFCC0vpp
 define('LAWKIT_10_DISCOUNT',            15);
 
 

@@ -183,7 +183,7 @@ class Account extends CI_Controller {
 							'customer' => $customer->id,
 							'items'     => array(
 								array(
-									'price' => LAWKIT_10,  // Go to application/config/constants.php for change this lawkit price
+									'price' => LAWKIT_10,  // Go to application/config/constants.php Line : 100 for change this lawkit price
 								),
 							),
 							'trial_end' => strtotime($endtrial->format("Y-m-d H:i:s"))
@@ -580,13 +580,16 @@ class Account extends CI_Controller {
 		$mail->Username = '4f657c4c247aca';
 		$mail->Password = 'f4eb9e951b6937';
 		$mail->Port     = 2525;
-
-        // $mail->Host     = 'lawkit.mx';
-        // $mail->SMTPAuth = true;
-        // $mail->SMTPSecure = 'ssl';
-        // $mail->Username = 'no-reply@lawkit.mx';
-        // $mail->Password = 'CKijfD$jqv1)';
-        // $mail->Port     = 465;
+		/**
+		 Change it with  This when  It go live :
+			// $mail->Host     = 'lawkit.mx';
+			// $mail->SMTPAuth = true;
+			// $mail->SMTPSecure = 'ssl';
+			// $mail->Username = 'no-reply@lawkit.mx';
+			// $mail->Password = 'CKijfD$jqv1)';
+			// $mail->Port     = 465;
+		 */
+        
         $mail->setFrom('no-reply@lawkit.mx', 'Lawkit');
         $mail->addAddress($mailto);
         $mail->addCC('elnew.luis@gmail.com');
